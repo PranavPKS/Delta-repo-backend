@@ -33,7 +33,7 @@ $password = $_POST['pass'];
 <fieldset style="width: 350px;">
 <legend>Sign in</legend>
 <LABEL>Roll no:</LABEL>
-			&nbsp;&nbsp;&nbsp;<input type = "text" name = "rno" placeholder = "Roll number">
+			&nbsp;&nbsp;&nbsp; <input type = "text" name = "rno" placeholder = "Roll number">
 			<br>
 			<LABEL>Password:</LABEL>
 			<input type = "password" name = "pass" placeholder = "Password">
