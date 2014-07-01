@@ -27,13 +27,15 @@ $password = $_POST['pass'];
 }
 
 ?>
-
-<center><h1>DELTA</h1><br>
+<body>
+<div id="login">
+<center><img src="images/logo.png" id="logo"><br><br><br><br>
+<h2>LOG IN FOR FUN</h2>
 <form action="<?php echo $current_file; ?>" method="POST">
-<fieldset style="width: 350px;">
+<fieldset id="log" style="width: 350px;">
 <legend>Sign in</legend>
 <LABEL>Roll no:</LABEL>
-			&nbsp;&nbsp;&nbsp; <input type = "text" name = "rno" placeholder = "Roll number">
+			&nbsp;&nbsp;&nbsp;<input type = "text" name = "rno" placeholder = "Roll number">
 			<br>
 			<LABEL>Password:</LABEL>
 			<input type = "password" name = "pass" placeholder = "Password">
@@ -43,3 +45,5 @@ $password = $_POST['pass'];
 </fieldset>
 </form>
 </center>
+</div>
+</body>
