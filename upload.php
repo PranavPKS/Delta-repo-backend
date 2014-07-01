@@ -30,9 +30,31 @@ echo 'Please choose a file...';
 
 }
 ?>
+<body>
+<script>
+function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr(<?php echo $tmp_name; ?>, e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+</script>
+<link rel="stylesheet" href="design.css">
+<center>
 <form action="upload.php" method="POST" enctype="multipart/form-data">
-	<input type="file" name ="file"><br><br>
+	<input type="file" name ="file" onchange="readURL(this);" >
+    <img id="blah" src="<?php echo $tmp_name; ?>" alt="your image" ><br><br>
 	<input type="submit" value="Submit">
 </form>
 <br>
-<button type="button"><a href="logout.php">Log out</a></button>
+<button type="button"><a href="logout.php">Log out</a></button></center>
+</body>
