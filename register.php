@@ -36,7 +36,9 @@ echo 'All fields are required.';
 
 
 ?>
-<div id="reg" style="float:right;">
+<body>
+<div id="reg">
+<h2>CREATE AN ACCOUNT</h2>
 <fieldset>
 <legend>Register</legend>
 <form action="register.php" method="POST">
@@ -70,6 +72,7 @@ echo 'All fields are required.';
 </form>
 </fieldset>
 </div>
+</body>
 <?php
 }
 
